@@ -1,0 +1,18 @@
+$main_color: #473535;
+$secondary_color: #560617;
+
+footer{
+  background-color: $secondary_color;
+
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+
+  color: white;
+
+  z-index: 10;
+
+  a, a:visited{
+    color: white;
+  }
+}

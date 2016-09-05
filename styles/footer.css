@@ -1,0 +1,11 @@
+footer {
+  background-color: #560617;
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  color: white;
+  z-index: 10; }
+  footer a, footer a:visited {
+    color: white; }
+
+/*# sourceMappingURL=footer.css.map */

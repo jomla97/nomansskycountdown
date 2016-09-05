@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "geonmswebfont"; }
+
+@font-face {
+  font-family: 'geonmswebfont';
+  src: url("../fonts/geonmswebfont.eot");
+  src: url("../fonts/geonmswebfont.eot") format("embedded-opentype"), url("../fonts/geonmswebfont.woff2") format("woff2"), url("../fonts/geonmswebfont.woff") format("woff"), url("../fonts/geonmswebfont.ttf") format("truetype"), url("../fonts/geonmswebfont.svg#geonmswebfont") format("svg"); }
+main {
+  background-image: url("../res/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  overflow: hidden;
+  position: relative; }
+  main div#video-controls {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 5px; }
+    main div#video-controls div.button {
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+      display: inline-block;
+      margin: 0 4px;
+      cursor: pointer;
+      opacity: 0.8;
+      transition: ease-in-out 0.1s;
+      -webkit-transition: ease-in-out 0.1s;
+      -moz-transition: ease-in-out 0.1s;
+      -o-transition: ease-in-out 0.1s; }
+    main div#video-controls div#video {
+      background-image: url(../res/video_controls/image.png); }
+    main div#video-controls div#volume {
+      background-image: url(../res/video_controls/muted.png); }
+  main .adsbygoogle {
+    position: absolute;
+    left: 50%;
+    margin-left: -364px; }
+  main #remove-ads {
+    width: 728px;
+    position: absolute;
+    left: 50%;
+    top: 90px;
+    padding: 10px 0;
+    margin-left: -364px;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    opacity: 0.5; }
+  main #remove-ads:hover {
+    background-color: #f2f2f2; }
+  main div#countdown {
+    width: 820px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -146.5px;
+    margin-left: -430px;
+    padding: 80px 20px;
+    color: #473535; }
+    main div#countdown form#location-dropdown {
+      position: absolute;
+      top: 0;
+      left: 0; }
+      main div#countdown form#location-dropdown select {
+        font-size: 20px;
+        opacity: 0.5; }
+        main div#countdown form#location-dropdown select option {
+          opacity: 0.7;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none; }
+        main div#countdown form#location-dropdown select option:hover {
+          background-color: #473535; }
+    main div#countdown h1 {
+      font-size: 30px;
+      position: relative; }
+      main div#countdown h1 span {
+        font-size: 70px; }
+    main div#countdown p {
+      font-size: 30px;
+      margin-bottom: 20px;
+      position: relative; }
+    main div#countdown div#background {
+      background-color: white;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.4; }
+  main div#social {
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-bottom: 5px;
+    margin-left: -153.1565px; }
+    main div#social p {
+      margin-bottom: 5px;
+      font-weight: bold; }
+    main div#social div.social-link {
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+      margin: 0 4px;
+      opacity: 0.8;
+      transition: ease-in-out 0.1s;
+      -webkit-transition: ease-in-out 0.1s;
+      -moz-transition: ease-in-out 0.1s;
+      -o-transition: ease-in-out 0.1s;
+      display: inline-block; }
+    main div#social div#facebook {
+      background-image: url(../res/social/facebook.png); }
+    main div#social div#facebook:hover {
+      background-image: url(../res/social/facebook-hover.png); }
+    main div#social div#twitter {
+      background-image: url(../res/social/twitter.png); }
+    main div#social div#twitter:hover {
+      background-image: url(../res/social/twitter-hover.png); }
+    main div#social div#youtube {
+      background-image: url(../res/social/youtube.png); }
+    main div#social div#youtube:hover {
+      background-image: url(../res/social/youtube-hover.png); }
+    main div#social div#reddit {
+      background-image: url(../res/social/reddit.png); }
+    main div#social div#reddit:hover {
+      background-image: url(../res/social/reddit-hover.png); }
+    main div#social div#website {
+      background-image: url(../res/social/website.png); }
+    main div#social div#website:hover {
+      background-image: url(../res/social/website-hover.png); }
+  main div#about-button {
+    background-image: url(../res/about.png);
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin: 5px;
+    opacity: 0.8;
+    transition: ease-in-out 0.1s;
+    -webkit-transition: ease-in-out 0.1s;
+    -moz-transition: ease-in-out 0.1s;
+    -o-transition: ease-in-out 0.1s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    cursor: pointer; }
+  main div#about-button:hover {
+    background-image: url(../res/about-hover.png); }
+
+div#about {
+  display: none;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  padding-top: 50px; }
+  div#about div.exit {
+    background-image: url(../res/exit.png);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: ease-in-out 0.1s;
+    -webkit-transition: ease-in-out 0.1s;
+    -moz-transition: ease-in-out 0.1s;
+    -o-transition: ease-in-out 0.1s; }
+  div#about div.exit:hover {
+    opacity: 0.8; }
+  div#about a, div#about a:visited {
+    color: black;
+    text-decoration: underline; }
+  div#about h1 {
+    text-align: center;
+    margin-bottom: 30px; }
+  div#about p {
+    width: 800px;
+    margin: 20 auto;
+    font-size: 20px; }
+
+section {
+  width: 960px;
+  padding: 100px 0;
+  margin: 0 auto;
+  color: #473535;
+  font-size: 30px; }
+  section p {
+    width: 600px;
+    margin: 0 auto; }
+
+/*# sourceMappingURL=main.css.map */
